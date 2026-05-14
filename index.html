@@ -395,6 +395,144 @@
     .price-card.feat { transform: none; }
     .process { margin: 0; border-radius: 0; }
   }
+
+  /* ===== SERVICII DEDICATE ===== */
+  .services-detail { background: var(--bg); }
+  .services-detail-head { text-align: center; margin-bottom: 3rem; }
+  .services-detail-head .section-chip { display: inline-flex; }
+  .services-detail-head .section-sub { margin: 0 auto; }
+
+  .sdetail-tabs { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 3.5rem; }
+  .stab { padding: 0.55rem 1.3rem; border-radius: 50px; border: 2px solid var(--gray-light); font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: all 0.2s; background: white; color: var(--text-muted); }
+  .stab.active, .stab:hover { background: var(--purple); color: white; border-color: var(--purple); }
+
+  .sdetail-content { display: none; }
+  .sdetail-content.active { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+
+  .sdetail-left h3 { font-size: 1.7rem; font-weight: 800; color: var(--navy); margin-bottom: 1rem; letter-spacing: -0.03em; }
+  .sdetail-left p { color: var(--text-muted); line-height: 1.75; font-size: 0.95rem; margin-bottom: 1.8rem; }
+  .sdetail-features { display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 2rem; }
+  .sdetail-feature { display: flex; align-items: flex-start; gap: 0.8rem; padding: 1rem; background: white; border-radius: 14px; }
+  .sdetail-feature-ic { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .sdetail-feature-text strong { display: block; font-size: 0.87rem; font-weight: 700; color: var(--navy); margin-bottom: 0.2rem; }
+  .sdetail-feature-text span { font-size: 0.8rem; color: var(--text-muted); }
+
+  .sdetail-packages { display: flex; flex-direction: column; gap: 1rem; }
+  .spkg { background: white; border-radius: 18px; padding: 1.8rem; border: 2px solid var(--gray-light); transition: all 0.25s; position: relative; }
+  .spkg:hover { border-color: rgba(108,62,244,0.3); box-shadow: 0 8px 28px rgba(108,62,244,0.09); }
+  .spkg.spkg-feat { background: var(--navy); border-color: var(--navy); }
+  .spkg-badge { position: absolute; top: -10px; right: 1.5rem; background: var(--purple); color: white; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; padding: 0.18rem 0.7rem; border-radius: 50px; text-transform: uppercase; }
+  .spkg-name { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--purple); margin-bottom: 0.5rem; }
+  .spkg.spkg-feat .spkg-name { color: #b39dfa; }
+  .spkg-price { font-size: 2rem; font-weight: 800; color: var(--navy); line-height: 1; margin-bottom: 0.3rem; }
+  .spkg.spkg-feat .spkg-price { color: white; }
+  .spkg-period { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1rem; }
+  .spkg.spkg-feat .spkg-period { color: rgba(255,255,255,0.4); }
+  .spkg-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.2rem; }
+  .spkg-list li { font-size: 0.82rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem; }
+  .spkg.spkg-feat .spkg-list li { color: rgba(255,255,255,0.6); }
+  .spkg-list li svg { flex-shrink: 0; color: var(--mint); }
+  .spkg-btn { display: flex; align-items: center; justify-content: center; gap: 0.4rem; width: 100%; padding: 0.75rem; border-radius: 50px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 0.85rem; text-decoration: none; cursor: pointer; transition: all 0.2s; border: none; }
+  .spkg-btn-outline { background: transparent; border: 2px solid var(--gray-light); color: var(--text); }
+  .spkg-btn-outline:hover { border-color: var(--purple); color: var(--purple); background: var(--purple-pale); }
+  .spkg-btn-fill { background: var(--purple); color: white; box-shadow: 0 4px 14px rgba(108,62,244,0.3); }
+  .spkg-btn-fill:hover { background: var(--purple-light); }
+
+  /* ===== BLOG ===== */
+  .blog { background: white; }
+  .blog-head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; flex-wrap: wrap; gap: 1.5rem; }
+  .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .bcard { background: var(--bg); border-radius: 20px; overflow: hidden; transition: all 0.3s; }
+  .bcard:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(108,62,244,0.1); }
+  .bcard-thumb { height: 170px; position: relative; display: flex; align-items: flex-end; padding: 1.2rem; }
+  .bt1 { background: linear-gradient(135deg, #1a1040, #3d1fa8); }
+  .bt2 { background: linear-gradient(135deg, #0a4a3a, #10d9a0); }
+  .bt3 { background: linear-gradient(135deg, #7c1d1d, #ff6b6b); }
+  .bt4 { background: linear-gradient(135deg, #2d1500, #f59e0b); }
+  .bt5 { background: linear-gradient(135deg, #1e2d6b, #6c3ef4); }
+  .bt6 { background: linear-gradient(135deg, #0d2d2d, #0891b2); }
+  .bcard-cat { background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); color: white; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.25rem 0.7rem; border-radius: 50px; }
+  .bcard-body { padding: 1.4rem; }
+  .bcard-meta { display: flex; gap: 1rem; margin-bottom: 0.7rem; }
+  .bcard-meta span { font-size: 0.72rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.3rem; }
+  .bcard-body h3 { font-size: 0.97rem; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem; line-height: 1.4; }
+  .bcard-body p { font-size: 0.82rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1rem; }
+  .bcard-link { font-size: 0.82rem; font-weight: 600; color: var(--purple); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem; transition: gap 0.2s; }
+  .bcard-link:hover { gap: 0.6rem; }
+
+  /* ===== DESPRE NOI ===== */
+  .despre { background: var(--bg); }
+  .despre-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; margin-top: 3rem; }
+  .despre-values { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+  .dval { background: white; border-radius: 16px; padding: 1.3rem; }
+  .dval-ic { width: 38px; height: 38px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 0.8rem; }
+  .dval h4 { font-size: 0.88rem; font-weight: 700; color: var(--navy); margin-bottom: 0.3rem; }
+  .dval p { font-size: 0.78rem; color: var(--text-muted); line-height: 1.6; }
+  .echipa-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .emember { background: white; border-radius: 18px; padding: 1.5rem; text-align: center; transition: all 0.3s; }
+  .emember:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(108,62,244,0.1); }
+  .emember-av { width: 60px; height: 60px; border-radius: 50%; margin: 0 auto 0.9rem; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1rem; color: white; }
+  .em1 { background: linear-gradient(135deg, var(--purple), var(--purple-light)); }
+  .em2 { background: linear-gradient(135deg, var(--mint), #34d399); }
+  .em3 { background: linear-gradient(135deg, var(--coral), #ffa07a); }
+  .em4 { background: linear-gradient(135deg, #f59e0b, #fbbf24); }
+  .em5 { background: linear-gradient(135deg, #0891b2, #22d3ee); }
+  .em6 { background: linear-gradient(135deg, #8b5cf6, #c4b5fd); }
+  .emember h4 { font-size: 0.88rem; font-weight: 700; color: var(--navy); margin-bottom: 0.2rem; }
+  .emember-role { font-size: 0.73rem; color: var(--purple); font-weight: 600; margin-bottom: 0.4rem; }
+  .emember-bio { font-size: 0.74rem; color: var(--text-muted); line-height: 1.55; }
+
+  /* ===== FEEDBACK ===== */
+  .feedback-section { background: white; }
+  .feedback-inner { max-width: 660px; margin: 3rem auto 0; }
+  .fq-step { display: none; }
+  .fq-step.active { display: block; }
+  .fq-progress { display: flex; gap: 0.4rem; margin-bottom: 2.5rem; }
+  .fq-prog-bar { height: 4px; border-radius: 2px; flex: 1; background: var(--gray-light); transition: background 0.4s; }
+  .fq-prog-bar.done { background: var(--purple); }
+  .fq-question { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem; }
+  .fq-sub { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+  .fq-stars { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; }
+  .fq-star { cursor: pointer; transition: transform 0.15s; }
+  .fq-star:hover { transform: scale(1.2); }
+  .fq-star svg { width: 36px; height: 36px; color: #d1d5db; transition: color 0.15s; }
+  .fq-star.active svg { color: var(--yellow); }
+  .fq-options { display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 1.5rem; }
+  .fq-option { display: flex; align-items: center; gap: 0.8rem; padding: 0.9rem 1.1rem; background: var(--bg); border-radius: 12px; cursor: pointer; border: 2px solid transparent; transition: all 0.2s; }
+  .fq-option:hover, .fq-option.selected { background: var(--purple-pale); border-color: var(--purple); }
+  .fq-option-dot { width: 18px; height: 18px; border-radius: 50%; border: 2px solid #d1d5db; flex-shrink: 0; transition: all 0.2s; display: flex; align-items: center; justify-content: center; }
+  .fq-option.selected .fq-option-dot { border-color: var(--purple); background: var(--purple); }
+  .fq-option.selected .fq-option-dot::after { content: ''; width: 7px; height: 7px; border-radius: 50%; background: white; display: block; }
+  .fq-option-label { font-size: 0.87rem; font-weight: 500; color: var(--text); }
+  .fq-textarea { width: 100%; background: var(--bg); border: 2px solid transparent; border-radius: 14px; padding: 1rem; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.9rem; color: var(--text); resize: vertical; min-height: 120px; outline: none; transition: border-color 0.2s; margin-bottom: 1.5rem; }
+  .fq-textarea:focus { border-color: var(--purple); background: white; }
+  .fq-textarea::placeholder { color: var(--text-muted); opacity: 0.5; }
+  .fq-nav { display: flex; gap: 0.8rem; }
+  .fq-btn-next { background: var(--purple); color: white; border: none; padding: 0.8rem 2rem; border-radius: 50px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 0.4rem; box-shadow: 0 4px 14px rgba(108,62,244,0.3); }
+  .fq-btn-next:hover { background: var(--purple-light); transform: translateY(-1px); }
+  .fq-btn-back { background: transparent; color: var(--text-muted); border: 2px solid var(--gray-light); padding: 0.8rem 1.5rem; border-radius: 50px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: all 0.2s; }
+  .fq-btn-back:hover { border-color: var(--purple); color: var(--purple); }
+  .fq-success { text-align: center; padding: 3rem 2rem; }
+  .fq-success-ic { width: 72px; height: 72px; background: var(--mint-pale); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem; }
+  .fq-success-ic svg { width: 32px; height: 32px; color: #059669; }
+  .fq-success h3 { font-size: 1.4rem; font-weight: 800; color: var(--navy); margin-bottom: 0.5rem; }
+  .fq-success p { color: var(--text-muted); font-size: 0.9rem; }
+
+  /* RESPONSIVE UPDATES */
+  @media (max-width: 960px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-visual { display: none; }
+    .services-grid, .portfolio-grid, .pricing-grid, .testimonials-grid, .blog-grid { grid-template-columns: 1fr; }
+    .process-steps { grid-template-columns: repeat(2, 1fr); }
+    .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+    .price-card.feat { transform: none; }
+    .process { margin: 0; border-radius: 0; }
+    .sdetail-content.active { grid-template-columns: 1fr; }
+    .despre-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .despre-values { grid-template-columns: 1fr 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -404,7 +542,8 @@
   <ul class="nav-links">
     <li><a href="#servicii">Servicii</a></li>
     <li><a href="#portofoliu">Portofoliu</a></li>
-    <li><a href="#preturi">Prețuri</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#despre">Despre noi</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="#contact" class="nav-cta">Ofertă gratuită</a>
@@ -562,58 +701,6 @@
   </div>
 </section>
 
-<section class="pricing" id="preturi">
-  <div class="pricing-head">
-    <div class="section-chip"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg> Pachete</div>
-    <h2 class="section-title">Prețuri transparente,<br>fără surprize</h2>
-    <p class="section-sub">Alege pachetul potrivit pentru afacerea ta. Toate includ garanție și suport dedicat.</p>
-  </div>
-  <div class="pricing-grid">
-    <div class="price-card fu">
-      <div class="plan-name">Starter</div>
-      <div class="plan-price"><span class="plan-cur">€</span>499</div>
-      <div class="plan-period">plată unică, mentenanță opțională</div>
-      <ul class="plan-list">
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Site prezentare până la 5 pagini</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Design responsiv mobil</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Formular de contact</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> SEO de bază inclus</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Garanție 6 luni</li>
-      </ul>
-      <a href="#contact" class="plan-btn pb-outline"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> Solicită ofertă</a>
-    </div>
-    <div class="price-card feat fu d1">
-      <div class="feat-badge">Cel mai popular</div>
-      <div class="plan-name">Business</div>
-      <div class="plan-price"><span class="plan-cur" style="color:#b39dfa">€</span>999</div>
-      <div class="plan-period">plată unică, mentenanță opțională</div>
-      <ul class="plan-list">
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Site complet până la 15 pagini</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Design premium personalizat</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Blog integrat</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> SEO avansat + raport lunar</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Google Analytics integrat</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Garanție 12 luni</li>
-      </ul>
-      <a href="#contact" class="plan-btn pb-fill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> Solicită ofertă</a>
-    </div>
-    <div class="price-card fu d2">
-      <div class="plan-name">E-Commerce</div>
-      <div class="plan-price"><span class="plan-cur">€</span>1499</div>
-      <div class="plan-period">plată unică, mentenanță opțională</div>
-      <ul class="plan-list">
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Magazin online complet</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Integrare plăți (card, PayPal)</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Gestionare produse și stocuri</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> SEO pentru e-commerce</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Integrare curierat</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Training administrare inclus</li>
-      </ul>
-      <a href="#contact" class="plan-btn pb-outline"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> Solicită ofertă</a>
-    </div>
-  </div>
-</section>
-
 <section class="testimonials">
   <div class="section-chip"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Recenzii</div>
   <h2 class="section-title">Ce spun clienții noștri</h2>
@@ -682,20 +769,380 @@
   </div>
 </section>
 
+<!-- ===== SERVICII DEDICATE ===== -->
+<section class="services-detail" id="servicii-detalii">
+  <div class="services-detail-head fu">
+    <div class="section-chip"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"/><path d="M7 7h.01"/></svg> Pachete detaliate</div>
+    <h2 class="section-title">Explorează fiecare serviciu</h2>
+    <p class="section-sub">Prețuri orientative transparente și ce include fiecare pachet, pentru fiecare tip de proiect.</p>
+  </div>
+  <div class="sdetail-tabs fu">
+    <button class="stab active" onclick="showService(event,'web')">Creare Site Web</button>
+    <button class="stab" onclick="showService(event,'mentenanta')">Mentenanță Lunară</button>
+    <button class="stab" onclick="showService(event,'seo')">Optimizare SEO</button>
+    <button class="stab" onclick="showService(event,'ecommerce')">Magazine Online</button>
+  </div>
+
+  <div class="sdetail-content active fu" id="svc-web">
+    <div class="sdetail-left">
+      <h3>Creare Site Web Profesional</h3>
+      <p>Construim site-uri de prezentare, landing page-uri și platforme web complete, adaptate perfect brandului și obiectivelor tale. Fiecare proiect pornește de la zero — design unic, cod curat, livrat la termen.</p>
+      <div class="sdetail-features">
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-p"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg></div><div class="sdetail-feature-text"><strong>Design Responsiv</strong><span>Arată perfect pe orice dispozitiv: desktop, tabletă, telefon.</span></div></div>
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-m"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></div><div class="sdetail-feature-text"><strong>Performanță Înaltă</strong><span>Timp de încărcare sub 2s, scor Google PageSpeed 90+.</span></div></div>
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-c"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div><div class="sdetail-feature-text"><strong>SEO On-Page Inclus</strong><span>Meta tags, sitemap XML, schema markup și structură corectă.</span></div></div>
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-y"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="sdetail-feature-text"><strong>SSL & Securitate</strong><span>Certificat SSL gratuit, protecție DDOS și backup automat.</span></div></div>
+      </div>
+      <a href="#contact" class="btn-primary" style="display:inline-flex;align-items:center;gap:0.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg> Solicită ofertă gratuită</a>
+    </div>
+    <div class="sdetail-packages">
+      <div class="spkg fu">
+        <div class="spkg-name">Starter</div>
+        <div class="spkg-price"><span style="font-size:1.1rem;vertical-align:super">€</span>499</div>
+        <div class="spkg-period">plată unică · până la 5 pagini</div>
+        <ul class="spkg-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Template personalizat</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Formular de contact</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> SEO de bază inclus</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Livrare în 3 săptămâni</li>
+        </ul>
+        <a href="#contact" class="spkg-btn spkg-btn-outline">Solicită ofertă</a>
+      </div>
+      <div class="spkg spkg-feat fu d1">
+        <div class="spkg-badge">Recomandat</div>
+        <div class="spkg-name">Business</div>
+        <div class="spkg-price"><span style="font-size:1.1rem;vertical-align:super;color:#b39dfa">€</span>999</div>
+        <div class="spkg-period">plată unică · până la 15 pagini</div>
+        <ul class="spkg-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Design 100% personalizat</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Blog + CMS integrat</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Google Analytics integrat</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Garanție 12 luni</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Training administrare inclus</li>
+        </ul>
+        <a href="#contact" class="spkg-btn spkg-btn-fill">Solicită ofertă</a>
+      </div>
+      <div class="spkg fu d2">
+        <div class="spkg-name">Enterprise</div>
+        <div class="spkg-price">Custom</div>
+        <div class="spkg-period">proiecte complexe · la cerere</div>
+        <ul class="spkg-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Pagini nelimitate</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Funcționalități avansate</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Integrări API externe</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Suport dedicat</li>
+        </ul>
+        <a href="#contact" class="spkg-btn spkg-btn-outline">Contactează-ne</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sdetail-content fu" id="svc-mentenanta">
+    <div class="sdetail-left">
+      <h3>Mentenanță Lunară Completă</h3>
+      <p>Uiți de griji tehnice și te concentrezi pe afacere. Echipa noastră monitorizează și întreține site-ul tău zi de zi, asigurând securitate maximă și performanță constantă.</p>
+      <div class="sdetail-features">
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-m"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div><div class="sdetail-feature-text"><strong>Actualizări Securitate</strong><span>Patch-uri săptămânale, monitorizare vulnerabilități non-stop.</span></div></div>
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-p"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg></div><div class="sdetail-feature-text"><strong>Backup Zilnic</strong><span>Copii de siguranță automate păstrate 30 de zile.</span></div></div>
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-y"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="sdetail-feature-text"><strong>Suport în 24h</strong><span>Răspundem la orice problemă tehnică în maximum 24 de ore.</span></div></div>
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-c"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div><div class="sdetail-feature-text"><strong>Raport Lunar</strong><span>Statistici de trafic, performanță și acțiuni efectuate.</span></div></div>
+      </div>
+      <a href="#contact" class="btn-primary" style="display:inline-flex;align-items:center;gap:0.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg> Solicită ofertă gratuită</a>
+    </div>
+    <div class="sdetail-packages">
+      <div class="spkg fu">
+        <div class="spkg-name">Basic</div>
+        <div class="spkg-price"><span style="font-size:1.1rem;vertical-align:super">€</span>79<span style="font-size:1rem">/lună</span></div>
+        <div class="spkg-period">contract minim 3 luni</div>
+        <ul class="spkg-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Actualizări lunare</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Backup săptămânal</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Monitorizare uptime</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Suport email</li>
+        </ul>
+        <a href="#contact" class="spkg-btn spkg-btn-outline">Solicită ofertă</a>
+      </div>
+      <div class="spkg spkg-feat fu d1">
+        <div class="spkg-badge">Popular</div>
+        <div class="spkg-name">Pro</div>
+        <div class="spkg-price"><span style="font-size:1.1rem;vertical-align:super;color:#b39dfa">€</span>149<span style="font-size:1rem;color:rgba(255,255,255,0.5)">/lună</span></div>
+        <div class="spkg-period">fără contract minim</div>
+        <ul class="spkg-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Actualizări săptămânale</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Backup zilnic (30 zile)</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> 2h modificări conținut/lună</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Raport lunar performanță</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Suport telefon și email</li>
+        </ul>
+        <a href="#contact" class="spkg-btn spkg-btn-fill">Solicită ofertă</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sdetail-content fu" id="svc-seo">
+    <div class="sdetail-left">
+      <h3>Optimizare SEO Completă</h3>
+      <p>Aducem site-ul tău în topul Google pentru cuvintele cheie relevante afacerii tale. Strategie SEO bazată pe date, cu rezultate măsurabile în 3–6 luni.</p>
+      <div class="sdetail-features">
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-p"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div><div class="sdetail-feature-text"><strong>Audit Tehnic Complet</strong><span>Identificăm toate problemele care te țin jos în Google.</span></div></div>
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-m"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div><div class="sdetail-feature-text"><strong>Cercetare Cuvinte Cheie</strong><span>Găsim termenii cu cel mai mare potențial pentru domeniul tău.</span></div></div>
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-c"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div><div class="sdetail-feature-text"><strong>Link Building</strong><span>Construim autoritate prin backlink-uri de calitate relevante.</span></div></div>
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-y"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div><div class="sdetail-feature-text"><strong>Raport Lunar Detaliat</strong><span>Ranking, trafic organic, conversii și plan de acțiune.</span></div></div>
+      </div>
+      <a href="#contact" class="btn-primary" style="display:inline-flex;align-items:center;gap:0.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg> Solicită ofertă gratuită</a>
+    </div>
+    <div class="sdetail-packages">
+      <div class="spkg fu">
+        <div class="spkg-name">Local SEO</div>
+        <div class="spkg-price"><span style="font-size:1.1rem;vertical-align:super">€</span>199<span style="font-size:1rem">/lună</span></div>
+        <div class="spkg-period">ideal pentru afaceri locale</div>
+        <ul class="spkg-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Optimizare Google Business</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> 10 cuvinte cheie targetate</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Optimizare on-page</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Raport lunar</li>
+        </ul>
+        <a href="#contact" class="spkg-btn spkg-btn-outline">Solicită ofertă</a>
+      </div>
+      <div class="spkg spkg-feat fu d1">
+        <div class="spkg-badge">Recomandat</div>
+        <div class="spkg-name">SEO Avansat</div>
+        <div class="spkg-price"><span style="font-size:1.1rem;vertical-align:super;color:#b39dfa">€</span>399<span style="font-size:1rem;color:rgba(255,255,255,0.5)">/lună</span></div>
+        <div class="spkg-period">creștere organică consistentă</div>
+        <ul class="spkg-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> 30+ cuvinte cheie targetate</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Link building activ</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> 4 articole blog SEO/lună</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Analiză competitori</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Call lunar de strategie</li>
+        </ul>
+        <a href="#contact" class="spkg-btn spkg-btn-fill">Solicită ofertă</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sdetail-content fu" id="svc-ecommerce">
+    <div class="sdetail-left">
+      <h3>Magazine Online Complete</h3>
+      <p>Construim magazine online performante, cu experiență de cumpărare fluidă și toate integrările necesare: plăți, livrări, facturare și management stocuri.</p>
+      <div class="sdetail-features">
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-m"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></div><div class="sdetail-feature-text"><strong>Plăți Online</strong><span>Integrare Stripe, PayU, card, transfer bancar și ramburs.</span></div></div>
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-p"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="sdetail-feature-text"><strong>Livrare & Curierat</strong><span>Integrare FanCourier, DPD, Sameday și calcul automat costuri.</span></div></div>
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-c"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg></div><div class="sdetail-feature-text"><strong>Facturare Automată</strong><span>Integrare SmartBill sau Oblio pentru facturi automate.</span></div></div>
+        <div class="sdetail-feature"><div class="sdetail-feature-ic ic-y"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><div class="sdetail-feature-text"><strong>Management Produse</strong><span>Panou admin intuitiv pentru stocuri, prețuri și categorii.</span></div></div>
+      </div>
+      <a href="#contact" class="btn-primary" style="display:inline-flex;align-items:center;gap:0.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg> Solicită ofertă gratuită</a>
+    </div>
+    <div class="sdetail-packages">
+      <div class="spkg fu">
+        <div class="spkg-name">Shop Starter</div>
+        <div class="spkg-price"><span style="font-size:1.1rem;vertical-align:super">€</span>799</div>
+        <div class="spkg-period">până la 50 de produse</div>
+        <ul class="spkg-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Design responsiv shop</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Plăți online integrate</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Coș și checkout optimizat</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Panou administrare</li>
+        </ul>
+        <a href="#contact" class="spkg-btn spkg-btn-outline">Solicită ofertă</a>
+      </div>
+      <div class="spkg spkg-feat fu d1">
+        <div class="spkg-badge">Cel mai complet</div>
+        <div class="spkg-name">Shop Pro</div>
+        <div class="spkg-price"><span style="font-size:1.1rem;vertical-align:super;color:#b39dfa">€</span>1.499</div>
+        <div class="spkg-period">produse nelimitate</div>
+        <ul class="spkg-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Tot din Starter +</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Integrare curierat</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Facturare automată</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Newsletter integrat</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> SEO avansat pentru produse</li>
+        </ul>
+        <a href="#contact" class="spkg-btn spkg-btn-fill">Solicită ofertă</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BLOG ===== -->
+<section class="blog" id="blog">
+  <div class="blog-head">
+    <div>
+      <div class="section-chip"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg> Resurse & Educație</div>
+      <h2 class="section-title">Blog Nexora Digital</h2>
+    </div>
+    <p class="section-sub">Articole practice despre web design, SEO și marketing digital, publicate săptămânal.</p>
+  </div>
+  <div class="blog-grid">
+    <div class="bcard fu">
+      <div class="bcard-thumb bt1"><span class="bcard-cat">Web Design</span></div>
+      <div class="bcard-body">
+        <div class="bcard-meta"><span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg> 12 mai 2026</span><span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 min citit</span></div>
+        <h3>7 Tendințe de Web Design pe Care Nu Poți Să Le Ignori în 2026</h3>
+        <p>De la glassmorphism la micro-interacțiuni bazate pe AI, descoperă ce face un site să arate profesionist.</p>
+        <a href="#" class="bcard-link">Citește articolul <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="bcard fu d1">
+      <div class="bcard-thumb bt2"><span class="bcard-cat">SEO</span></div>
+      <div class="bcard-body">
+        <div class="bcard-meta"><span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg> 5 mai 2026</span><span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 8 min citit</span></div>
+        <h3>Cum Să Ajungi pe Prima Pagină Google: Ghid Complet SEO 2026</h3>
+        <p>Pas cu pas, tot ce trebuie să știi despre SEO în 2026 — de la cuvinte cheie la link building.</p>
+        <a href="#" class="bcard-link">Citește articolul <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="bcard fu d2">
+      <div class="bcard-thumb bt3"><span class="bcard-cat">Marketing Digital</span></div>
+      <div class="bcard-body">
+        <div class="bcard-meta"><span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg> 28 apr. 2026</span><span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6 min citit</span></div>
+        <h3>Google Ads vs SEO Organic: Ce Alegi pentru Afacerea Ta?</h3>
+        <p>Comparăm cele două strategii de vizibilitate online și te ajutăm să decizi unde să investești.</p>
+        <a href="#" class="bcard-link">Citește articolul <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="bcard fu">
+      <div class="bcard-thumb bt4"><span class="bcard-cat">Web Design</span></div>
+      <div class="bcard-body">
+        <div class="bcard-meta"><span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg> 20 apr. 2026</span><span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4 min citit</span></div>
+        <h3>De Ce Viteza Site-ului Îți Afectează Direct Vânzările</h3>
+        <p>O secundă în plus la încărcare scade conversiile cu 7%. Iată cum optimizăm viteza fără compromisuri.</p>
+        <a href="#" class="bcard-link">Citește articolul <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="bcard fu d1">
+      <div class="bcard-thumb bt5"><span class="bcard-cat">SEO</span></div>
+      <div class="bcard-body">
+        <div class="bcard-meta"><span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg> 14 apr. 2026</span><span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 7 min citit</span></div>
+        <h3>SEO Local: Cum Atragi Clienți din Zona Ta cu Google Maps</h3>
+        <p>Ghid practic pentru optimizarea profilului Google Business și dominarea căutărilor locale.</p>
+        <a href="#" class="bcard-link">Citește articolul <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="bcard fu d2">
+      <div class="bcard-thumb bt6"><span class="bcard-cat">Marketing Digital</span></div>
+      <div class="bcard-body">
+        <div class="bcard-meta"><span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg> 7 apr. 2026</span><span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 min citit</span></div>
+        <h3>Email Marketing în 2026: Încă Funcționează? (Da, Și Iată Cum)</h3>
+        <p>ROI-ul emailului rămâne cel mai ridicat din digital marketing. Iată strategiile care funcționează acum.</p>
+        <a href="#" class="bcard-link">Citește articolul <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:3rem">
+    <a href="#" class="btn-ghost"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14"/><path d="m5 12 7 7 7-7"/></svg> Toate articolele</a>
+  </div>
+</section>
+
+<!-- ===== DESPRE NOI ===== -->
+<section class="despre" id="despre">
+  <div class="section-chip fu"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Cine suntem</div>
+  <div class="despre-inner">
+    <div>
+      <h2 class="section-title fu">O echipă pasionată de digital</h2>
+      <p class="section-sub fu d1" style="max-width:100%;margin-bottom:1rem">Nexora Digital a luat naștere în 2020 dintr-o convingere simplă: fiecare afacere merită o prezență online care să o reprezinte cu adevărat. Suntem o echipă de 6 specialiști cu experiență în web design, development, SEO și marketing digital.</p>
+      <p class="section-sub fu d2" style="max-width:100%;margin-bottom:2rem">Am construit până acum peste 85 de site-uri pentru clienți din România și Europa — de la avocați și clinici medicale până la magazine online și agenții de turism. Fiecare proiect primește același nivel de atenție.</p>
+      <div class="despre-values">
+        <div class="dval fu d1"><div class="dval-ic ic-p"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>Calitate garantată</h4><p>Garanție 12 luni pe orice proiect livrat.</p></div>
+        <div class="dval fu d2"><div class="dval-ic ic-m"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h4>Livrare la termen</h4><p>100% din proiecte livrate în termenul agreat.</p></div>
+        <div class="dval fu d3"><div class="dval-ic ic-c"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div><h4>Comunicare deschisă</h4><p>Update-uri săptămânale pe tot parcursul proiectului.</p></div>
+        <div class="dval fu d3"><div class="dval-ic ic-y"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/></svg></div><h4>Orientați spre rezultate</h4><p>Măsurăm succesul în trafic și conversii.</p></div>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:1.2rem" class="fu">Echipa noastră</h3>
+      <div class="echipa-grid">
+        <div class="emember fu"><div class="emember-av em1">AD</div><h4>Alexandru Dumitrescu</h4><div class="emember-role">Fondator & CEO</div><p class="emember-bio">10 ani experiență în web development. Pasionat de UX și arhitecturi scalabile.</p></div>
+        <div class="emember fu d1"><div class="emember-av em2">IM</div><h4>Ioana Marinescu</h4><div class="emember-role">Lead Designer</div><p class="emember-bio">Designer UI/UX cu viziune creativă și ochi pentru detalii. Ex-Publicis București.</p></div>
+        <div class="emember fu d2"><div class="emember-av em3">MV</div><h4>Mihai Voicu</h4><div class="emember-role">SEO Specialist</div><p class="emember-bio">Specialist SEO cu peste 200 de site-uri optimizate și rezultate demonstrabile.</p></div>
+        <div class="emember fu d3"><div class="emember-av em4">RP</div><h4>Raluca Popa</h4><div class="emember-role">Project Manager</div><p class="emember-bio">Coordonează toate proiectele și se asigură că livrăm la timp și la calitate.</p></div>
+        <div class="emember fu"><div class="emember-av em5">CT</div><h4>Cosmin Tudor</h4><div class="emember-role">Frontend Developer</div><p class="emember-bio">Specialist React și WordPress. Transformă design-urile în site-uri rapide.</p></div>
+        <div class="emember fu d1"><div class="emember-av em6">EN</div><h4>Elena Nicolae</h4><div class="emember-role">Content & Marketing</div><p class="emember-bio">Scrie conținut SEO care se citește ușor și rankează bine în Google.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEEDBACK ===== -->
+<section class="feedback-section" id="feedback">
+  <div style="text-align:center">
+    <div class="section-chip" style="display:inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Chestionar satisfacție</div>
+    <h2 class="section-title fu" style="margin-top:0.5rem">Cum a fost experiența cu noi?</h2>
+    <p class="section-sub fu d1" style="margin:0 auto">Completează chestionarul în mai puțin de 2 minute. Accesibil și la <strong>nexoradigital.ro/feedback</strong>.</p>
+  </div>
+  <div class="feedback-inner fu d2">
+    <div class="fq-progress" id="fqProgress">
+      <div class="fq-prog-bar done"></div>
+      <div class="fq-prog-bar" id="fp2"></div>
+      <div class="fq-prog-bar" id="fp3"></div>
+      <div class="fq-prog-bar" id="fp4"></div>
+    </div>
+    <div class="fq-step active" id="fq1">
+      <div class="fq-question">1 / 4 — Cum evaluezi experiența generală?</div>
+      <div class="fq-sub">Apasă pe steluța corespunzătoare.</div>
+      <div class="fq-stars" id="fqStars">
+        <div class="fq-star" onclick="setRating(1)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="fq-star" onclick="setRating(2)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="fq-star" onclick="setRating(3)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="fq-star" onclick="setRating(4)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="fq-star" onclick="setRating(5)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+      </div>
+      <div class="fq-nav"><button class="fq-btn-next" onclick="fqNext(1)">Continuă <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button></div>
+    </div>
+    <div class="fq-step" id="fq2">
+      <div class="fq-question">2 / 4 — Ce serviciu ai folosit?</div>
+      <div class="fq-sub">Alege varianta care ți se potrivește.</div>
+      <div class="fq-options" id="fqService">
+        <label class="fq-option" onclick="selectOption(this,'fqService')"><div class="fq-option-dot"></div><span class="fq-option-label">Creare site web</span></label>
+        <label class="fq-option" onclick="selectOption(this,'fqService')"><div class="fq-option-dot"></div><span class="fq-option-label">Mentenanță lunară</span></label>
+        <label class="fq-option" onclick="selectOption(this,'fqService')"><div class="fq-option-dot"></div><span class="fq-option-label">Optimizare SEO</span></label>
+        <label class="fq-option" onclick="selectOption(this,'fqService')"><div class="fq-option-dot"></div><span class="fq-option-label">Pachet complet</span></label>
+        <label class="fq-option" onclick="selectOption(this,'fqService')"><div class="fq-option-dot"></div><span class="fq-option-label">Alt serviciu</span></label>
+      </div>
+      <div class="fq-nav"><button class="fq-btn-back" onclick="fqBack(2)">Înapoi</button><button class="fq-btn-next" onclick="fqNext(2)">Continuă <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button></div>
+    </div>
+    <div class="fq-step" id="fq3">
+      <div class="fq-question">3 / 4 — Ai recomanda Nexora Digital?</div>
+      <div class="fq-sub">Răspunsul tău onest ne ajută să creștem.</div>
+      <div class="fq-options" id="fqRecom">
+        <label class="fq-option" onclick="selectOption(this,'fqRecom')"><div class="fq-option-dot"></div><span class="fq-option-label">Cu siguranță da!</span></label>
+        <label class="fq-option" onclick="selectOption(this,'fqRecom')"><div class="fq-option-dot"></div><span class="fq-option-label">Probabil da</span></label>
+        <label class="fq-option" onclick="selectOption(this,'fqRecom')"><div class="fq-option-dot"></div><span class="fq-option-label">Nu sunt sigur</span></label>
+        <label class="fq-option" onclick="selectOption(this,'fqRecom')"><div class="fq-option-dot"></div><span class="fq-option-label">Probabil nu</span></label>
+      </div>
+      <div class="fq-nav"><button class="fq-btn-back" onclick="fqBack(3)">Înapoi</button><button class="fq-btn-next" onclick="fqNext(3)">Continuă <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button></div>
+    </div>
+    <div class="fq-step" id="fq4">
+      <div class="fq-question">4 / 4 — Vrei să ne lași un comentariu?</div>
+      <div class="fq-sub">Opțional — orice feedback este bine venit.</div>
+      <textarea class="fq-textarea" placeholder="Scrie ce ți-a plăcut, ce ar putea fi îmbunătățit sau orice altceva vrei să ne transmiți..."></textarea>
+      <div class="fq-nav"><button class="fq-btn-back" onclick="fqBack(4)">Înapoi</button><button class="fq-btn-next" onclick="fqSubmit()">Trimite feedback <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></button></div>
+    </div>
+    <div class="fq-step" id="fqDone">
+      <div class="fq-success">
+        <div class="fq-success-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></div>
+        <h3>Mulțumim pentru feedback!</h3>
+        <p>Apreciem că ai luat câteva minute să ne scrii. Ne ajuți să oferim servicii tot mai bune.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="footer-logo">Nexora<span class="logo-dot"></span>Digital</div>
   <ul class="footer-links">
     <li><a href="#servicii">Servicii</a></li>
     <li><a href="#portofoliu">Portofoliu</a></li>
-    <li><a href="#preturi">Prețuri</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#despre">Despre noi</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#feedback">Feedback</a></li>
   </ul>
   <div class="footer-copy">© 2026 Nexora Digital. Toate drepturile rezervate.</div>
 </footer>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-
     const obs = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.08 });
@@ -709,8 +1156,48 @@
   function handleSubmit(e) {
     e.preventDefault();
     const btn = e.target.querySelector('.form-btn');
-    btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Mesaj trimis! Te contactăm în 24h';
+    btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Mesaj trimis! Te contactăm în 24h';
     btn.style.background = '#059669';
+  }
+
+  function showService(e, id) {
+    document.querySelectorAll('.sdetail-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.stab').forEach(el => el.classList.remove('active'));
+    document.getElementById('svc-' + id).classList.add('active');
+    e.target.classList.add('active');
+  }
+
+  function setRating(n) {
+    document.querySelectorAll('.fq-star').forEach((s, i) => s.classList.toggle('active', i < n));
+  }
+
+  function updateProgress(step) {
+    ['fp2','fp3','fp4'].forEach((id, i) => {
+      document.getElementById(id).classList.toggle('done', i + 2 <= step);
+    });
+  }
+
+  function fqNext(step) {
+    document.getElementById('fq' + step).classList.remove('active');
+    document.getElementById('fq' + (step + 1)).classList.add('active');
+    updateProgress(step + 1);
+  }
+
+  function fqBack(step) {
+    document.getElementById('fq' + step).classList.remove('active');
+    document.getElementById('fq' + (step - 1)).classList.add('active');
+    updateProgress(step - 1);
+  }
+
+  function selectOption(el, groupId) {
+    document.querySelectorAll('#' + groupId + ' .fq-option').forEach(o => o.classList.remove('selected'));
+    el.classList.add('selected');
+  }
+
+  function fqSubmit() {
+    document.getElementById('fq4').classList.remove('active');
+    document.getElementById('fqDone').classList.add('active');
+    document.getElementById('fqProgress').style.display = 'none';
   }
 </script>
 </body>
